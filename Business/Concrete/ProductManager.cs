@@ -9,18 +9,17 @@ namespace Business.Concrete
 {
     public class ProductManager : IProductService
     {
-        IProductDal _producDal;
+        IProductDal _productDal;
 
-        public ProductManager(IProductDal producDal)
+        public ProductManager(IProductDal productDal)
         {
-            _producDal = producDal;
+            _productDal = productDal;
         }
 
         public List<Product> GetAll()
         {
             //İş kodları buraya yazılır, şu an simülasyon yapıyoruz. (if else vb. kodlar). Kuralları yazdığımız yer. 
-            return _producDal.GetAll();
-
+            return _productDal.GetAll();
         }
     }
 }

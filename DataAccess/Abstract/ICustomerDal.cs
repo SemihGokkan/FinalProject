@@ -5,9 +5,8 @@ using System.Text;
 
 namespace DataAccess.Abstract
 {
-    public interface IProductDal:IEntityRepository<Product> //Veri erişim interface, product tablosunun veri erişim kodları
+    public interface ICustomerDal:IEntityRepository<Customer>
     {
-         
 
     }
 }
