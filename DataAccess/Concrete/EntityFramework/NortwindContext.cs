@@ -10,7 +10,7 @@ namespace DataAccess.Concrete.EntityFramework
     public class NortwindContext:DbContext
     {
 
-        //override on yazıp ilk satırdaki seçeneği seçiyoruz ve bu yapıyı oluştutuyor.
+        //override on yazıp ilk satırdaki seçeneği seçiyoruz ve bu yapıyı oluştutuyor. 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(@"Server=(local)\SQL2014;Database=Northwind;Trusted_Connection=true"); //SQL Server bağlantısı
